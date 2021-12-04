@@ -13,7 +13,7 @@ class SketchBorderTest : SketchTestBase() {
         val orig = SketchIO.load(sourceImagePath)
         assertTrue {
             SketchIO.save(
-                orig.border(3, Color.yellow),
+                orig.border(3, Color.red),
                 destImagePath("hummingbird_border.png")
             )
         }
@@ -24,7 +24,7 @@ class SketchBorderTest : SketchTestBase() {
         val orig = SketchIO.load(sourceImagePath)
         assertTrue {
             SketchIO.save(
-                orig.borderRadius(30).border(3, Color.yellow).borderRadius(30),
+                orig.borderRadius(30).border(3, Color.red).borderRadius(30),
                 destImagePath("hummingbird_border_with_radius.png")
             )
         }

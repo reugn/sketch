@@ -1,10 +1,10 @@
-# Sketch
+# Sketch [![Build](https://github.com/reugn/sketch/actions/workflows/build.yml/badge.svg)](https://github.com/reugn/sketch/actions/workflows/build.yml)
 
 An image manipulation library for Kotlin.
 
 `Sketch` doesn't require any external installation like OpenCV or OCR and can be used right away. It's actually a
-zero-dependency library designed for simplicity that wraps the Java AWT BufferedImage.
-The library provides an asynchronous interface for all image operations.
+zero-dependency library designed for simplicity that wraps the Java AWT BufferedImage. The library provides an
+asynchronous interface for all image operations.
 
 ## Requirements
 
@@ -39,15 +39,11 @@ Click the heading to get the test code that generated the example.
 
 ### Transformations
 
-| [Rotate 45°][rotate] |
-|------------------------|
-|![dstImage](docs/images/hummingbird_rotate.png)|
+| [Rotate][rotate] | [Resize][resize] | [Crop rectangle][crop] | [Crop circle][crop] |
+|------------------|------------------|------------------------|---------------------|
+|![dstImage](docs/images/hummingbird_rotate.png)|![dstImage](docs/images/hummingbird_resized.jpg)|![dstImage](docs/images/hummingbird_crop_rect.jpg)|![dstImage](docs/images/hummingbird_crop_circle.png)|
 
 [rotate]: src/test/kotlin/io/github/reugn/sketch/SketchRotateTest.kt
-
-| [Resize][resize] | [Crop rectangle][crop] | [Crop circle][crop] |
-|------------------|------------------------|---------------------|
-|![dstImage](docs/images/hummingbird_resized.jpg)|![dstImage](docs/images/hummingbird_crop_rect.jpg)|![dstImage](docs/images/hummingbird_crop_circle.png)|
 
 [resize]: src/test/kotlin/io/github/reugn/sketch/SketchResizeTest.kt
 
