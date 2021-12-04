@@ -1,0 +1,10 @@
+build/
+.project
+.gradle/
+!gradle-wrapper.jar
+local.properties
+
+.vscode/
+.idea/
+
+test-images/
